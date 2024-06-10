@@ -11,11 +11,14 @@
     <meta name="author" content="Jason Rusk" />
     <link rel="stylesheet" href="styles//base.css">           
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <img src="images/profile-image.jpg" alt="Jason Rusk" width="75" height="80" />
-      <span>Jason Rusk</span>
+      <img src="images/profile-image.jpg" alt="Jason Rusk" width="110" height="120" />
+      <span>Jason M. Rusk</span>
     </header>
     <nav>
       <a href="#">Home</a>
@@ -42,11 +45,11 @@
       </section>
     </main>
     <footer>
-      <p>
-        &copy; <span id="currentYear"></span><br />Jason Rusk<br />California,
-        USA<br />
-        <img src="images/us-flag.png" alt="US Flag" width="25" height="18" />
-      </p>
+      <div class="footer-content">
+        <span>&copy; <span id="currentYear"></span> | Jason Rusk | California, USA</span>
+        <img src="images/us-flag.png" alt="US Flag" width="35" height="25
+        " />
+      </div>
       <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
