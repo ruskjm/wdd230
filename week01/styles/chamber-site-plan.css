@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #003049;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #d62828;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #f77f00;
+}
+
+/* Color Palette Styles */
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.colors th {
+  background-color: #999;
+}
+
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: #003049;
+}
+
+.secondary {
+  background-color: #d62828;
+}
+
+.accent1 {
+  background-color: #f77f00;
+}
+
+.accent2 {
+  background-color: #eae2b7;
+}
+
+/* Typography Styles */
+.colored {
+  background-color: #fcbf49;
+  color: #000000;
+  padding: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #003049;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
