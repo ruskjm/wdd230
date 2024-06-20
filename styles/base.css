@@ -109,6 +109,19 @@ main {
   color: #fff;
 }
 
+.dark-mode .learning-activities li {
+  color: #fff;
+}
+
+.dark-mode .learning-activities li a {
+  color: #fff;
+}
+
+.dark-mode .learning-activities li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 h1 {
   margin-bottom: 20px;
   border-bottom: 1px solid black;
@@ -131,7 +144,6 @@ section {
   border: 1px solid #ccc;
   padding: 0;
   margin: 10px;
-  vertical-align: top;
   overflow: auto;
   max-width: 800px;
   border-radius: 10px;
@@ -162,9 +174,18 @@ section {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.dark-mode .card ul li a {
+  color: #fff;
+}
+
 .card ul li a:hover {
   background-color: rgb(138, 173, 161);
   color: white;
+}
+
+.dark-mode .card ul li a:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 footer {
