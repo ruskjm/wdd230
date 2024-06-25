@@ -42,12 +42,14 @@
          </ul>
       </nav>
       <main>
-         <picture>
-            <source media="(max-width: 400px)" srcset="images/sacramento-temple-400.webp">
-            <source media="(max-width: 960px)" srcset="images/sacramento-temple-960.webp">
-            <img src="images/sacramento-temple-960.webp" alt="Latter-day Temple" loading="lazy">
+         <div class="picture-container">
+            <picture>
+               <source media="(max-width: 400px)" srcset="images/sacramento-temple-400.webp">
+               <source media="(max-width: 960px)" srcset="images/sacramento-temple-960.webp">
+               <img src="images/sacramento-temple-960.webp" alt="Latter-day Temple" loading="lazy">
+            </picture>
             <div class="temple-label">Sacramento Temple</div>
-         </picture>
+         </div>
          <h1>WDD 230: Web Frontend Development</h1>
          <section class="card">
             <h2>Learning Activities</h2>
@@ -74,7 +76,7 @@
             <h2>Information</h2>
             <div class="visit-counter">
                <p>Page Visits: <span id="visitCount"></span></p>
-             </div>
+            </div>
          </section>
       </main>
       <div class="map-container">

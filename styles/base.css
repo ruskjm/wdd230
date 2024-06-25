@@ -109,6 +109,11 @@ picture {
   display: inline-block;
 }
 
+.picture-container {
+  position: relative;
+  display: inline-block;
+}
+
 .temple-label {
   position: absolute;
   top: 20px;
@@ -116,7 +121,7 @@ picture {
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
   padding: 10px;
-  font-size: 18px;
+  font-size: 14px;
   white-space: nowrap;
 }
 
