@@ -23,7 +23,7 @@
    </head>
    <body>
       <header>
-         <img src="images/profile-image.jpg" alt="Jason Rusk" width="110" height="120">
+         <img src="images/profile-image.webp" alt="Jason Rusk" width="110" height="120" loading="lazy">
          <span>Jason M. Rusk</span>
          <button id="modeButton">🌓</button>
       </header>
@@ -42,6 +42,12 @@
          </ul>
       </nav>
       <main>
+         <picture>
+            <source media="(max-width: 400px)" srcset="images/sacramento-temple-400.webp">
+            <source media="(max-width: 960px)" srcset="images/sacramento-temple-960.webp">
+            <img src="images/sacramento-temple-960.webp" alt="Latter-day Temple" loading="lazy">
+            <div class="temple-label">Sacramento Temple</div>
+         </picture>
          <h1>WDD 230: Web Frontend Development</h1>
          <section class="card">
             <h2>Learning Activities</h2>
@@ -66,18 +72,24 @@
          </section>
          <section class="card">
             <h2>Information</h2>
-            <!-- Information placeholders about the weather, number of visits, etc. -->
+            <div class="visit-counter">
+               <p>Page Visits: <span id="visitCount"></span></p>
+             </div>
          </section>
       </main>
+      <div class="map-container">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100047.54089626513!2d-121.46116658953291!3d38.4071400769898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ab8cbe0a2f839%3A0xca0ceb60d31c08e8!2sElk%20Grove%2C%20CA!5e0!3m2!1sen!2sus!4v1719274569897!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
       <footer>
          <div class="footer-content">
             <span>&copy; <span id="currentYear"></span> | Jason Rusk | California, USA</span>
-            <img src="images/us-flag.png" alt="US Flag" width="35" height="25">
+            <img src="images/us-flag.webp" alt="US Flag" width="35" height="25" loading="lazy">
          </div>
          <p id="lastModified"></p>
       </footer>
       <script src="scripts/getDates.js"></script>
       <script src="scripts/hamburgerMenu.js"></script>
       <script src="scripts/darkMode.js"></script>
+      <script src="scripts/visitCounter.js"></script>
    </body>
 </html>

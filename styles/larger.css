@@ -1,8 +1,27 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 960px) {
   main {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
+  }
+
+  .temple-label {
+    top: 30px;
+    left: 30px;
+    font-size: 72px;
+  }
+
+  picture {
+    width: 90%;
+    max-height: 900px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  picture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
   h1 {
@@ -51,6 +70,16 @@
 
   header span {
     font-size: 5rem;
+  }
+
+  .visit-counter p {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .map-container {
+    margin: 40px 0;
+    padding-top: 25%;
   }
 
   footer {
