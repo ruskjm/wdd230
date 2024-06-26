@@ -125,6 +125,11 @@ header {
   justify-content: center;
 }
 
+.hero-content .hero-subheading {
+  font-size: 2em;
+  margin-top: 10px;
+}
+
 .hero img {
   width: 150px;
   margin-right: 0;
