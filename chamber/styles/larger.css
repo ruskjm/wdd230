@@ -19,6 +19,21 @@
     font-size: 28px;
   }
 
+  /* About styles for larger screens*/
+  .about {
+    padding: 3rem;
+    margin: 3rem 0;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p,
+  .about ul {
+    font-size: 1.1rem;
+  }
+
   /* Set up grid layout for main content */
   main {
     display: grid;
@@ -104,6 +119,16 @@
   /* Increase contact info font size */
   .contact p {
     font-size: 20px;
+  }
+
+  /* Adjusted styles for the map container on larger screens */
+  .map-container {
+    padding: 0 40px;
+  }
+
+  /* Adjusted styles for the map iframe on larger screens */
+  .map-container iframe {
+    height: 400px;
   }
 
   /* Set up grid layout for footer */

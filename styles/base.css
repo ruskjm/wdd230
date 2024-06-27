@@ -105,24 +105,48 @@ main {
 }
 
 picture {
-  position: relative;
-  display: inline-block;
+  display: block;
+  width: 100%;
 }
 
 .picture-container {
   position: relative;
-  display: inline-block;
+  width: 100%;
+  max-width: 960px;
+  margin: 40px auto 20px;
+  overflow: hidden;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.temple-image {
+  display: block;
+  width: 100%;
+}
+
+.temple-image img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
 }
 
 .temple-label {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 10px;
+  left: 10px;
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
-  padding: 10px;
-  font-size: 14px;
-  white-space: nowrap;
+  padding: 5px 10px;
+  font-size: 16px;
+  z-index: 10;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
 .dark-mode {
@@ -144,6 +168,7 @@ picture {
 }
 
 h1 {
+  margin-top: 10px;
   margin-bottom: 20px;
   border-bottom: 1px solid black;
   padding-bottom: 8px;

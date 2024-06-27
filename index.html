@@ -43,41 +43,43 @@
       </nav>
       <main>
          <div class="picture-container">
-            <picture>
+            <picture class="temple-image">
                <source media="(max-width: 400px)" srcset="images/sacramento-temple-400.webp">
                <source media="(max-width: 960px)" srcset="images/sacramento-temple-960.webp">
-               <img src="images/sacramento-temple-960.webp" alt="Latter-day Temple" loading="lazy">
+               <img src="images/sacramento-temple-960.webp" alt="Latter-day Temple" loading="lazy" width="960" height="640">
             </picture>
             <div class="temple-label">Sacramento Temple</div>
          </div>
          <h1>WDD 230: Web Frontend Development</h1>
-         <section class="card">
-            <h2>Learning Activities</h2>
-            <ul>
-               <li>Week 01: <a href="week01/holygrail.html" target="_blank">Layout</a> 
-                  | <a href="week01/media-query.html" target="_blank">Media Query</a> 
-                  | <a href="https://codepen.io/Jason-R-the-selector/pen/yLWoJmb" target="_blank">JS Pen</a>
-               </li>
-               <li>Week 02: <a href="week02/design.html" target="_blank">Web Design Principles</a>
-                  | <a href="https://codepen.io/Jason-R-the-selector/pen/rNgppXG" target="_blank">Responsive "Hamburger" Menu</a>
-                  | <a href="week02/bom.html" target="_blank">DOM Manipulation</a>
-               </li>
-               <li>Week 03: <a href="week03/images/landscape.webp" target="_blank">WebP</a>
-                  | <a href="week03/lazyload.html" target="_blank">Lazy Loading</a>
-                  | <a href="week03/responsive-images.html" target="_blank">Responsive Images</a>
-                  | <a href="week03/bom.html" target="_blank">localStorage</a>
-               </li>
-               <li>Week 04:</li>
-               <li>Week 05:</li>
-               <li>Week 06:</li>
-            </ul>
-         </section>
-         <section class="card">
-            <h2>Information</h2>
-            <div class="visit-counter">
-               <p>Page Visits: <span id="visitCount"></span></p>
-            </div>
-         </section>
+         <div class="card-container">
+            <section class="card">
+               <h2>Learning Activities</h2>
+               <ul>
+                  <li>Week 01: <a href="week01/holygrail.html" target="_blank">Layout</a> 
+                     | <a href="week01/media-query.html" target="_blank">Media Query</a> 
+                     | <a href="https://codepen.io/Jason-R-the-selector/pen/yLWoJmb" target="_blank">JS Pen</a>
+                  </li>
+                  <li>Week 02: <a href="week02/design.html" target="_blank">Web Design Principles</a>
+                     | <a href="https://codepen.io/Jason-R-the-selector/pen/rNgppXG" target="_blank">Responsive "Hamburger" Menu</a>
+                     | <a href="week02/bom.html" target="_blank">DOM Manipulation</a>
+                  </li>
+                  <li>Week 03: <a href="week03/images/landscape.webp" target="_blank">WebP</a>
+                     | <a href="week03/lazyload.html" target="_blank">Lazy Loading</a>
+                     | <a href="week03/responsive-images.html" target="_blank">Responsive Images</a>
+                     | <a href="week03/bom.html" target="_blank">localStorage</a>
+                  </li>
+                  <li>Week 04:</li>
+                  <li>Week 05:</li>
+                  <li>Week 06:</li>
+               </ul>
+            </section>
+            <section class="card">
+               <h2>Information</h2>
+               <div class="visit-counter">
+                  <p>Page Visits: <span id="visitCount"></span></p>
+               </div>
+            </section>
+         </div>
       </main>
       <div class="map-container">
          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100047.54089626513!2d-121.46116658953291!3d38.4071400769898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ab8cbe0a2f839%3A0xca0ceb60d31c08e8!2sElk%20Grove%2C%20CA!5e0!3m2!1sen!2sus!4v1719274569897!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
