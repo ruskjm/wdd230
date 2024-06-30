@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+table {
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+caption {
+  padding: 10px;
+  font-weight: bold;
+  color: black;
+  caption-side: bottom;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+/* Style for "ACME Wildwest Services" row */
+thead tr:first-child th {
+  background-color: black;
+  color: white;
+}
+
+/* Style for "Basic Premium Deluxe" row */
+thead tr:nth-child(2) {
+  background-color: #444;
+  color: white;
+}
+
+/* Style for the empty cell in the second header row */
+thead tr:nth-child(2) th:first-child {
+  background-color: black;
+  border-color: black;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+tbody td:first-child,
+thead th:first-child {
+  border-left: none;
+}
+
+th:last-child,
+td:last-child {
+  border-right: none;
+}
