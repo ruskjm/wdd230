@@ -1,21 +1,56 @@
 @media screen and (min-width: 500px) {
+  /* Header styles for larger screens */
+  header span {
+    font-size: 4rem;
+  }
+
+  /* Hide hamburger menu on larger screens */
+  .hamburger-menu {
+    display: none;
+  }
+
+  /* Navigation styles for larger screens */
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-links li {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .nav-links a {
+    font-size: 2.5rem;
+  }
+
+  /* Increase font size for main navigation items */
+  .nav-links li:nth-child(1) a,
+  .nav-links li:nth-child(2) a,
+  .nav-links li:nth-child(3) a,
+  .nav-links li:nth-child(4) a {
+    font-size: 3rem;
+  }
+
+  /* Main content layout for larger screens */
   main {
+    min-height: 70vh;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: flex-start;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
   }
 
-  .temple-image img {
-    max-height: 600px;
+  /* Main heading styles */
+  h1 {
+    width: 100%;
+    font-size: 3rem;
+    margin-top: 10px;
   }
 
-  .temple-label {
-    top: 20px;
-    left: 20px;
-    font-size: 30px;
-    padding: 10px 20px;
-  }
-
+  /* Picture container styles */
   .picture-container {
     max-width: 1200px;
     margin-bottom: 10px;
@@ -32,69 +67,81 @@
     max-height: 600px;
   }
 
-  h1 {
-    width: 100%;
-    font-size: 3rem;
-    margin-top: 10px;
+  /* Temple image styles */
+  .temple-image img {
+    max-height: 600px;
   }
 
-  .card {
-    width: 48%; /* Adjust as needed */
-    margin: 50px;
+  .temple-label {
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    padding: 10px 20px;
   }
 
+  /* Card container layout */
   .card-container {
     flex-direction: row;
     justify-content: space-between;
   }
 
+  /* Card styles for larger screens */
+  .card {
+    width: 48%; /* Adjust as needed */
+    margin: 50px;
+  }
+
   .card h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .card ul li {
     font-size: 2.2rem;
   }
 
-  .hamburger-menu {
-    display: none;
-  }
-
-  .nav-links {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .nav-links li {
-    margin-bottom: 0;
-    margin-right: 20px;
-  }
-
-  .nav-links a {
-    font-size: 2.5rem;
-  }
-
-  .nav-links li:nth-child(1) a,
-  .nav-links li:nth-child(2) a,
-  .nav-links li:nth-child(3) a,
-  .nav-links li:nth-child(4) a {
-    font-size: 3rem;
-  }
-
-  header span {
-    font-size: 5rem;
-  }
-
+  /* Visit counter styles */
   .visit-counter p {
     font-size: 25px;
     font-weight: bold;
   }
 
+  /* Map container styles */
   .map-container {
     margin: 40px 0;
     padding-top: 25%;
   }
 
+  /* Form container styles */
+  .form-container {
+    max-width: 600px;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .wf1 {
+    width: 100%;
+  }
+
+  /* Styles for the confirmation page */
+  main .card {
+    width: 60%;
+    max-width: 600px;
+    margin: 50px auto;
+  }
+
+  main .card h2 {
+    font-size: 2.5rem;
+  }
+
+  main .card p {
+    font-size: 1.8rem;
+  }
+
+  main .card a {
+    font-size: 1.8rem;
+  }
+
+  /* Footer styles for larger screens */
   footer {
     font-size: 2rem;
   }
