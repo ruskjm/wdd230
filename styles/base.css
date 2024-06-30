@@ -282,7 +282,7 @@ picture img {
 .wf1 label {
   display: block;
   padding-top: 1rem;
-  color: var(--secondary-color);
+  color: var(--text-color);
   font-size: 0.9rem;
 }
 
