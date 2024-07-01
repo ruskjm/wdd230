@@ -52,10 +52,13 @@
                   <input type="text" id="username" name="username" required>
                   <label for="password">Password:</label>
                   <input type="password" id="password" name="password" required pattern="^[a-zA-Z0-9]{8,}$">
+                  <small>Password must be at least 8 characters long and contain only letters and numbers.</small>
                   <label for="password-confirm">Confirm Password:</label>
                   <input type="password" id="password-confirm" name="password-confirm" required>
+                  <span id="passwordError" class="error" style="display: none;" aria-live="polite">Passwords do not match</span>
                   <label for="email">Email:</label>
                   <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address">
+                  <span id="emailError" class="error" style="display: none;" aria-live="polite">Not a valid @byui.edu email address</span>
                </fieldset>
                <fieldset>
                   <legend>Feedback</legend>
@@ -89,7 +92,6 @@
       <script src="scripts/getDates.js"></script>
       <script src="scripts/hamburgerMenu.js"></script>
       <script src="scripts/darkMode.js"></script>
-      <script src="scripts/visitCounter.js"></script>
-      <script src="scripts/ratings.js"></script>
+      <script src="scripts/form.js"></script>
    </body>
 </html>

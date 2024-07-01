@@ -361,6 +361,12 @@ picture img {
   border-left: solid 8px blue;
 }
 
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
 /* Datalist styles */
 #rangevalues {
   display: flex;
