@@ -10,6 +10,15 @@ li {
   padding: 0;
 }
 
+/* Set root values */
+:root {
+  --primary-color: #003049;
+  --secondary-color: #004b74;
+  --light-bg-color: #f4f1de;
+  --body-text-color: #333;
+  --white-color: #fff;
+}
+
 /* Set global font styles */
 body {
   font-family: "Lora", serif;
@@ -27,7 +36,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #003049;
+  background-color: var(--primary-color);
 }
 
 /* Style for the top part of the header */
@@ -52,14 +61,14 @@ header {
 .bar {
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: var(--white-color);
   transition: transform 0.3s ease;
 }
 
 .close-icon {
   display: none;
   font-size: 24px;
-  color: #fff;
+  color: var(--white-color);
 }
 
 /* Styles for active hamburger menu */
@@ -91,7 +100,7 @@ header {
 .nav-menu a {
   display: block;
   padding: 10px;
-  color: #fff;
+  color: var(--white-color);
   font-size: 18px;
   text-decoration: none;
 }
@@ -104,13 +113,13 @@ header {
 .about {
   background-color: #d3d1c7;
   padding: 2rem;
-  margin: 2rem 0;
+  margin: 2rem 0 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .about h2 {
-  color: #003049;
+  color: var(--primary-color);
   margin-bottom: 1rem;
 }
 
@@ -127,8 +136,8 @@ header {
 
 .about .cta-button {
   display: inline-block;
-  background-color: #003049;
-  color: white;
+  color: var(--primary-color);
+  color: var(--white-color);
   padding: 0.5rem 1rem;
   text-decoration: none;
   border-radius: 4px;
@@ -136,13 +145,13 @@ header {
 }
 
 .about .cta-button:hover {
-  background-color: #004b74;
+  background-color: var(--secondary-color);
 }
 
 /* Hero section styles */
 .hero {
   text-align: center;
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 
 .hero-content {
@@ -165,7 +174,7 @@ header {
 
 .hero h1 {
   font-size: 24px;
-  color: #333;
+  color: var(--body-text-color);
 }
 
 /* Join section styles */
@@ -180,7 +189,7 @@ header {
   justify-content: center;
   padding: 8px 16px;
   background-color: black;
-  color: white;
+  color: var(--white-color);
   text-decoration: none;
   border-radius: 14px;
 }
@@ -198,7 +207,7 @@ header {
 
 /* Main content styles */
 main {
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .events,
@@ -214,10 +223,10 @@ main {
 .events h2,
 .weather h2,
 .spotlight h3 {
-  color: #003049;
+  color: var(--primary-color);
   font-size: 1.5em;
   margin-bottom: 15px;
-  border-bottom: 2px solid #003049;
+  border-bottom: 2px solid var(--primary-color);
   padding-bottom: 10px;
 }
 
@@ -231,18 +240,18 @@ main {
 }
 
 .events a {
-  color: #333;
+  color: var(--body-text-color);
   text-decoration: none;
   transition: color 0.3s ease;
   display: block;
   padding: 10px;
-  background-color: #fff;
+  background-color: var(--white-color);
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .events a:hover {
-  color: #003049;
+  color: var(--primary-color);
   background-color: #d4d4d7;
 }
 
@@ -254,7 +263,7 @@ main {
 .map-section h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #003049;
+  color: var(--primary-color);
   font-size: 24px;
 }
 
@@ -275,8 +284,8 @@ main {
 /* Footer styles */
 footer {
   padding: 20px;
-  background-color: #003049;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--white-color);
   font-size: 14px;
 }
 
@@ -341,8 +350,8 @@ footer {
 
 .sidebar h2 {
   margin-bottom: 20px;
-  color: #003049;
-  border-bottom: 2px solid #003049;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
   padding-bottom: 10px;
 }
 
@@ -367,7 +376,7 @@ footer {
   grid-column: 1 / -1;
   text-align: center;
   margin-bottom: 20px;
-  color: #003049;
+  color: var(--primary-color);
 }
 
 .image-gallery figure {
@@ -399,5 +408,198 @@ footer {
 
 /* Event date styles in calendar */
 .calendar li strong {
-  color: #003049;
+  color: var(--primary-color);
+}
+
+/* Form styles */
+.join-form {
+  background-color: #eae2b7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.join-form h2 {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+.join-form form {
+  display: grid;
+  gap: 10px;
+}
+
+.join-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: var(--body-text-color);
+  margin-bottom: 5px;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form select,
+.join-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+
+.join-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.join-form input[type="submit"] {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.join-form input[type="submit"]:hover {
+  background-color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+.input-note {
+  font-size: 12px;
+  color: var(--body-text-color);
+  margin-top: 2px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+/* Membership benefits styles */
+.membership-benefits {
+  background-color: var(--light-bg-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.membership-benefits h2 {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+.benefit-level {
+  background-color: var(--white-color);
+  border: 1px solid #0c0000;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.benefit-level h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #9e1a1a;
+  margin-bottom: 10px;
+}
+
+.benefit-level ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.benefit-level li {
+  margin-bottom: 5px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.benefit-level li::before {
+  content: "•";
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+}
+
+.join-form input:required,
+.join-form select:required,
+.join-form textarea:required {
+  border-left: solid 8px #530303;
+}
+
+.join-form input:required:valid,
+.join-form select:required:valid,
+.join-form textarea:required:valid {
+  border-left: solid 8px #000a10;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+/* Existing Thank You Page Styles */
+.thank-you-message {
+  max-width: 800px;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--light-bg-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-message h2 {
+  color: var(--primary-color);
+  font-size: 2em;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.thank-you-message p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: var(--body-text-color);
+}
+
+.thank-you-message .button {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.thank-you-message .button:hover {
+  background-color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+main:has(.thank-you-message) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(50vh - 200px);
 }

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Join Elk Grove Chamber of Commerce | Jason Rusk | WDD 230</title>
+      <meta name="author" content="Jason Rusk">
+      <meta name="description" content="Join the Elk Grove Chamber of Commerce and support local businesses.">
+      <meta property="og:title" content="Join Elk Grove Chamber of Commerce">
+      <meta property="og:description" content="Join the Elk Grove Chamber of Commerce website for Web Frontend Development, created by Jason Rusk.">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/3/35/Elk_Grove%2C_California_logo_2012.png">
+      <meta property="og:url" content="https://ruskjm.github.io/wdd230/chamber/join.html">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="styles/normalize.css">
+      <link rel="stylesheet" href="styles/base.css">
+      <link rel="stylesheet" href="styles/larger.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@100;400&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <div class="header-top">
+            <nav>
+               <div class="hamburger-menu">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="close-icon">&#10005;</span>
+               </div>
+               <ul class="nav-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="discover.html">Discover</a></li>
+                  <li><a href="#">Directory</a></li>
+               </ul>
+            </nav>
+            <div class="join">
+               <a href="join.html">
+               <img src="images/join-icon.webp" alt="Join Icon">
+               <span>Join the Chamber</span>
+               </a>
+            </div>
+         </div>
+         <section class="hero">
+            <div class="hero-content">
+               <img src="images/Elk-Grove.webp" alt="Elk Grove Chamber of Commerce">
+               <h1>Join Elk Grove Chamber of Commerce</h1>
+            </div>
+         </section>
+      </header>
+      <main>
+         <section class="join-form">
+            <h2>Membership Application</h2>
+            <form method="get" action="thankyou.html">
+               <label for="firstName">First Name:
+               <input type="text" id="firstName" name="firstName" required>
+               </label>
+               <label for="lastName">Last Name:
+               <input type="text" id="lastName" name="lastName" required>
+               </label>
+               <label for="title">Title or Position:
+               <input type="text" id="title" name="title" required>
+               <small class="input-note">Minimum 7 characters, only alphanumeric characters, hyphens, and spaces allowed.</small>
+               <span class="error" id="titleError"></span>
+               </label>         
+               <label for="email">Email:
+               <input type="email" id="email" name="email" 
+                  required
+                  placeholder="example@email.com">
+               <span class="error" id="emailError"></span>
+               </label>
+               <label for="phone">Mobile Phone Number:
+               <input type="tel" id="phone" name="phone" required>
+               </label>
+               <label for="business">Business or Organization Name:
+               <input type="text" id="business" name="business" required>
+               </label>
+               <label for="membership">
+                  Membership Level:
+                  <select id="membership" name="membership" required>
+                     <option value="" disabled selected>Select a membership level</option>
+                     <option value="np">Non-Profit Membership</option>
+                     <option value="bronze">Bronze Membership</option>
+                     <option value="silver">Silver Membership</option>
+                     <option value="gold">Gold Membership</option>
+                  </select>
+               </label>
+               <label for="description">Business or Organization Description:
+               <textarea id="description" name="description"></textarea>
+               </label>
+               <input type="hidden" id="timestamp" name="timestamp">
+               <input type="submit" value="Apply for Membership">
+            </form>
+         </section>
+         <section class="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <div class="benefit-level">
+               <h3>Non-Profit Membership</h3>
+               <p class="price">Free</p>
+               <ul>
+                  <li>For non-profit organizations</li>
+                  <li>Basic networking opportunities</li>
+                  <li>Listing in online member directory</li>
+               </ul>
+            </div>
+            <div class="benefit-level">
+               <h3>Bronze Membership</h3>
+               <p class="price">$50/month</p>
+               <ul>
+                  <li>Access to member-only events</li>
+                  <li>Monthly newsletter</li>
+                  <li>Basic business directory listing</li>
+                  <li>Social media mention (once per quarter)</li>
+               </ul>
+            </div>
+            <div class="benefit-level">
+               <h3>Silver Membership</h3>
+               <p class="price">$100/month</p>
+               <ul>
+                  <li>All Bronze benefits</li>
+                  <li>Discounted event tickets</li>
+                  <li>Enhanced business directory listing</li>
+                  <li>Quarterly spotlight in newsletter</li>
+                  <li>Social media feature (once per month)</li>
+               </ul>
+            </div>
+            <div class="benefit-level">
+               <h3>Gold Membership</h3>
+               <p class="price">$200/month</p>
+               <ul>
+                  <li>All Silver benefits</li>
+                  <li>Priority sponsorship opportunities</li>
+                  <li>Free admission to select events</li>
+                  <li>Monthly spotlight on homepage</li>
+                  <li>Exclusive networking sessions</li>
+                  <li>Featured article in newsletter (twice per year)</li>
+                  <li>Banner ad on Chamber website</li>
+               </ul>
+            </div>
+         </section>
+      </main>
+      <footer>
+         <div class="footer-content">
+            <div class="contact">
+               <p>Elk Grove Chamber of Commerce</p>
+               <p>Inside CSD Lobby, 8820 Elk Grove Blvd # 4, Elk Grove, CA 95624</p>
+               <p>Phone: 916-691-3760</p>
+               <p>Email: Chamber@elkgroveca.com</p>
+            </div>
+            <div class="social-media">
+               <a href="https://facebook.com" target="_blank">
+               <img src="images/facebook.webp" alt="Facebook" loading="lazy">
+               </a>
+               <a href="https://twitter.com" target="_blank"><img src="images/twitter.webp" alt="Twitter" loading="lazy"></a>
+               <a href="https://instagram.com" target="_blank"><img src="images/instagram.webp" alt="Instagram" loading="lazy"></a>
+               <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.webp" alt="LinkedIn" loading="lazy"></a>
+            </div>
+         </div>
+         <div class="development">
+            <p>&copy; <span id="currentYear"></span> Elk Grove Chamber of Commerce. All Rights Reserved.</p>
+            <img src="images/us-flag.webp" alt="US Flag" width="35" height="25" loading="lazy">
+            <p>Jason Rusk | WDD 230: Chamber of Commerce Project</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+         </div>
+      </footer>
+      <script src="scripts/getDates.js"></script>
+      <script src="scripts/hamburgerMenu.js"></script>
+      <script src="scripts/join.js"></script>
+   </body>
+</html>

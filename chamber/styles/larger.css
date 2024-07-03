@@ -37,15 +37,62 @@
   /* Set up grid layout for main content */
   main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 3fr 2fr;
     grid-gap: 30px;
     padding: 40px;
+  }
+
+  /* Position and style join form */
+  .join-form {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 30px;
+  }
+
+  .join-form h2 {
+    font-size: 28px;
+  }
+
+  .join-form input[type="text"],
+  .join-form input[type="email"],
+  .join-form input[type="tel"],
+  .join-form select,
+  .join-form textarea {
+    font-size: 18px;
+  }
+
+  .join-form input[type="submit"] {
+    font-size: 18px;
+    padding: 15px 25px;
+  }
+
+  /* Position and style membership benefits */
+  .membership-benefits {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: 30px;
+  }
+
+  .membership-benefits h2 {
+    font-size: 28px;
+  }
+
+  .benefit-level h3 {
+    font-size: 22px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .benefit-level li {
+    font-size: 16px;
   }
 
   /* Position and style events section */
   .events {
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
   }
 
   .events h2 {
@@ -59,7 +106,7 @@
   /* Position and style weather section */
   .weather {
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
   }
 
   .weather h2 {
@@ -73,22 +120,22 @@
   /* Position spotlight sections in grid */
   .spotlight:nth-child(3) {
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
   }
 
   .spotlight:nth-child(4) {
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
   }
 
   .spotlight:nth-child(5) {
     grid-column: 1 / 2;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
   }
 
   .spotlight:nth-child(6) {
     grid-column: 2 / 3;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
   }
 
   /* Style spotlight content */
@@ -194,5 +241,14 @@
   .image-gallery img:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .thank-you-message {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .thank-you-message h2 {
+    font-size: 1.5em;
   }
 }

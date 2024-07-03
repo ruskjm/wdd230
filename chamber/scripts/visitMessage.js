@@ -1,38 +1,52 @@
 // Wait for the DOM to be fully loaded before running the script
 document.addEventListener('DOMContentLoaded', () => {
+
     // Get the element where the visit message will be displayed
     const visitMessage = document.getElementById('visit-message');
-    
-    // Get the current timestamp
+
+    // Get the current timestamp in milliseconds
     const now = Date.now();
-    
-    // Retrieve the last visit timestamp from localStorage
-    let lastVisit = localStorage.getItem('lastVisit');
 
-    // Check if this is the first visit
-    if (!lastVisit) {
-        // If it's the first visit, display the welcome message
+    // Retrieve the firstVisit timestamp from localStorage
+    let firstVisit = localStorage.getItem('firstVisit');
+
+    // Check if this is the firstVisit
+    if (!firstVisit) {
+
+        // If it's the firstVisit, display the welcome message
         visitMessage.textContent = "Welcome! Let us know if you have any questions.";
-    } else {
-        // Convert the last visit string to a number
-        const lastVisitDate = parseInt(lastVisit);
-        
-        // Calculate the number of days since the last visit
-        const daysSinceLastVisit = Math.floor((now - lastVisitDate) / (1000 * 60 * 60 * 24));
 
-        // Check if the last visit was less than a day ago
-        if (daysSinceLastVisit < 1) {
+        // Add the firstVisit date to localStorage with the current timestamp in milliseconds
+        localStorage.setItem('firstVisit', now.toString());
+
+    } else {
+        // Convert the firstVisit string to a number
+        const firstVisitDate = parseInt(firstVisit);
+
+        // Calculate the number of days since the firstVisit
+        // 1. Subtract firstVisitDate from now to get the difference in milliseconds
+        // 2. Divide by (1000 * 60 * 60 * 24) to convert milliseconds to days:
+        //    - 1000 milliseconds in a second
+        //    - 60 seconds in a minute
+        //    - 60 minutes in an hour
+        //    - 24 hours in a day
+        // 3. Use Math.floor() to round down to the nearest whole number of days
+        const daysSincefirstVisit = Math.floor((now - firstVisitDate) / (1000 * 60 * 60 * 24));
+
+        // Check if the firstVisit was less than a day ago
+        if (daysSincefirstVisit < 1) {
+
             // If less than a day, display the "back so soon" message
             visitMessage.textContent = "Back so soon! Awesome!";
+
         } else {
+
             // If more than a day, prepare the appropriate day/days wording
-            const dayWord = daysSinceLastVisit === 1 ? "day" : "days";
-            
-            // Display the number of days since the last visit
-            visitMessage.textContent = `You last visited ${daysSinceLastVisit} ${dayWord} ago.`;
+            const dayWord = daysSincefirstVisit === 1 ? "day" : "days";
+
+            // Display the number of days since the firstVisit
+            visitMessage.textContent = `You last visited ${daysSincefirstVisit} ${dayWord} ago.`;
         }
     }
 
-    // Update the last visit date in localStorage with the current timestamp
-    localStorage.setItem('lastVisit', now.toString());
 });
