@@ -1,8 +1,9 @@
 // Wait for the DOM to be fully loaded before executing the script
 document.addEventListener('DOMContentLoaded', function() {
-    // Get references to the email and title input elements
+    // Get references to the email and title input elements, and the form
     const emailInput = document.getElementById('email');
     const titleInput = document.getElementById('title');
+    const form = document.querySelector('form');
 
     // Email validation
     // Function to validate email using a regular expression
@@ -27,26 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
         emailInput.classList.remove('invalid');
     }
 
-    // Add blur event listener to email input
-    emailInput.addEventListener('blur', function() {
-        // Check if email is empty
-        if (!validateEmail(this.value)) {
-            // Show error if invalid
-            showEmailError('Please enter a valid email address.');
-        } else {
-            // Clear error if valid
-            clearEmailError();
-        }
-    });
-
-    // Add input event listener to email input
-    emailInput.addEventListener('input', function() {
-        if (this.value !== '') {
-            // Clear error when user starts typing
-            clearEmailError();
-        }
-    });
-
     // Title validation
     // Function to validate title using a regular expression
     function validateTitle(title) {
@@ -70,9 +51,29 @@ document.addEventListener('DOMContentLoaded', function() {
         titleInput.classList.remove('invalid');
     }
 
+    // Add blur event listener to email input
+    emailInput.addEventListener('blur', function() {
+        // Check if email is valid
+        if (!validateEmail(this.value)) {
+            // Show error if invalid
+            showEmailError('Please enter a valid email address.');
+        } else {
+            // Clear error if valid
+            clearEmailError();
+        }
+    });
+
+    // Add input event listener to email input
+    emailInput.addEventListener('input', function() {
+        if (this.value !== '') {
+            // Clear error when user starts typing
+            clearEmailError();
+        }
+    });
+
     // Add blur event listener to title input
     titleInput.addEventListener('blur', function() {
-        // Check if title is empty
+        // Check if title is valid
         if (!validateTitle(this.value)) {
             // Show error if invalid
             showTitleError('Minimum 7 characters, only alphanumeric characters, hyphens, and spaces allowed.');
@@ -87,6 +88,28 @@ document.addEventListener('DOMContentLoaded', function() {
         if (this.value !== '') {
             // Clear error when user starts typing
             clearTitleError();
+        }
+    });
+
+    // Add form submission event listener
+    form.addEventListener('submit', function(event) {
+        let isValid = true;
+
+        // Validate email
+        if (!validateEmail(emailInput.value)) {
+            showEmailError('Please enter a valid email address.');
+            isValid = false;
+        }
+
+        // Validate title
+        if (!validateTitle(titleInput.value)) {
+            showTitleError('Minimum 7 characters, only alphanumeric characters, hyphens, and spaces allowed.');
+            isValid = false;
+        }
+
+        // Prevent form submission if validation fails
+        if (!isValid) {
+            event.preventDefault();
         }
     });
 });
