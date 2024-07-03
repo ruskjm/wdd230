@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Set the value of the hidden timestamp field
     const timestampElement = document.getElementById('timestamp');
+    
     // Check if the timestamp element exists in the DOM before setting its value
     // This prevents errors if the element is missing for any reason
     if (timestampElement) {
