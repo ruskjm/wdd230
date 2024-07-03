@@ -36,5 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('formLoadTimestamp', formattedDateTime);
 
     // Set the value of the hidden timestamp field
-    document.getElementById('timestamp').value = formattedDateTime;
+    const timestampElement = document.getElementById('timestamp');
+    // Check if the timestamp element exists in the DOM before setting its value
+    // This prevents errors if the element is missing for any reason
+    if (timestampElement) {
+        // If the element exists, set its value to the formatted date and time
+        timestampElement.value = formattedDateTime;
+    }
 });
