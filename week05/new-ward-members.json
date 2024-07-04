@@ -1,0 +1,88 @@
+{
+    "families": [
+        {
+            "familyName": "Smith",
+            "moveInDate": "09-15-2023",
+            "familySize": 4,
+            "visitedByBishopric": true,
+            "members": [
+                {
+                    "name": "John Smith",
+                    "gender": "Male",
+                    "birthdate": "03-22-1980"
+                },
+                {
+                    "name": "Jane Smith",
+                    "gender": "Female",
+                    "birthdate": "07-14-1982"
+                },
+                {
+                    "name": "Tommy Smith",
+                    "gender": "Male",
+                    "birthdate": "11-30-2010"
+                },
+                {
+                    "name": "Sarah Smith",
+                    "gender": "Female",
+                    "birthdate": "05-18-2013"
+                }
+            ]
+        },
+        {
+            "familyName": "Johnson",
+            "moveInDate": "01-05-2024",
+            "familySize": 3,
+            "visitedByBishopric": false,
+            "members": [
+                {
+                    "name": "Michael Johnson",
+                    "gender": "Male",
+                    "birthdate": "09-08-1975"
+                },
+                {
+                    "name": "Emily Johnson",
+                    "gender": "Female",
+                    "birthdate": "12-20-1978"
+                },
+                {
+                    "name": "Oliver Johnson",
+                    "gender": "Male",
+                    "birthdate": "02-14-2015"
+                }
+            ]
+        },
+        {
+            "familyName": "Jones",
+            "moveInDate": "03-10-2024",
+            "familySize": 5,
+            "visitedByBishopric": true,
+            "members": [
+                {
+                    "name": "David Jones",
+                    "gender": "Male",
+                    "birthdate": "06-12-1979"
+                },
+                {
+                    "name": "Amanda Jones",
+                    "gender": "Female",
+                    "birthdate": "08-25-1981"
+                },
+                {
+                    "name": "Sophia Jones",
+                    "gender": "Female",
+                    "birthdate": "04-03-2008"
+                },
+                {
+                    "name": "Ethan Jones",
+                    "gender": "Male",
+                    "birthdate": "10-17-2011"
+                },
+                {
+                    "name": "Olivia Jones",
+                    "gender": "Female",
+                    "birthdate": "01-30-2016"
+                }
+            ]
+        }
+    ]
+}
