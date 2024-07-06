@@ -11,8 +11,8 @@ if (window.location.hostname === "localhost" || window.location.hostname === "12
     linksURL = "https://ruskjm.github.io/wdd230/data/links.json";
 }
 
-console.log("Current baseURL:", baseURL);
-console.log("Current linksURL:", linksURL);
+// console.log("Current baseURL:", baseURL);
+// console.log("Current linksURL:", linksURL);
 
 
 // Asynchronous function to fetch the links data

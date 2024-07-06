@@ -223,17 +223,10 @@ picture img {
 }
 
 /* Weather/Visit counter styles */
-.info-card {
-  padding: 20px;
-}
-
-.info-card h2 {
-  margin-bottom: 15px;
-}
-
 .weather-info h3 {
   font-size: 1.8rem;
   margin-bottom: 10px;
+  padding: 20px;
 }
 
 .weather-display {
@@ -255,6 +248,10 @@ picture img {
 .feels-like {
   font-size: 0.9em;
   margin-top: 5px;
+}
+
+.visit-counter p {
+  padding: 20px;
 }
 
 .visit-counter {
