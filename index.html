@@ -54,37 +54,31 @@
          <div class="card-container">
             <section class="card">
                <h2>Learning Activities</h2>
-               <ul>
-                  <li>Week 01: <a href="week01/holygrail.html" target="_blank">Layout</a> 
-                     | <a href="week01/media-query.html" target="_blank">Media Query</a> 
-                     | <a href="https://codepen.io/Jason-R-the-selector/pen/yLWoJmb" target="_blank">JS Pen</a>
-                  </li>
-                  <li>Week 02: <a href="week02/design.html" target="_blank">Web Design Principles</a>
-                     | <a href="https://codepen.io/Jason-R-the-selector/pen/rNgppXG" target="_blank">Responsive "Hamburger" Menu</a>
-                     | <a href="week02/bom.html" target="_blank">DOM Manipulation</a>
-                  </li>
-                  <li>Week 03: <a href="week03/images/landscape.webp" target="_blank">WebP</a>
-                     | <a href="week03/lazyload.html" target="_blank">Lazy Loading</a>
-                     | <a href="week03/responsive-images.html" target="_blank">Responsive Images</a>
-                     | <a href="week03/bom.html" target="_blank">localStorage</a>
-                  </li>
-                  <li>Week 04: <a href="https://codepen.io/Jason-R-the-selector/pen/OJYeWaV" target="_blank">CSS Pseudo-Classes</a>
-                     | <a href="week04/images/css-combinators.jpg" target="_blank">CSS Combinators</a>
-                     | <a href="week04/tablebuild.html" target="_blank">HTML Tables for Data Presentation</a>
-                     | <a href="week04/index.html" target="_blank">HTML Forms</a>
-                  </li>
-                  <li>Week 05: <a href="https://codepen.io/Jason-R-the-selector/pen/QWXLWJb" target="_blank">CSS Pseudo-elements</a>
-                     | <a href="week05/new-ward-members.json" target="_blank">JSON</a>
-                     | <a href="week05/prophets.html" target="_blank">The Fetch API</a>
-                     | <a href="week05/weather.html" target="_blank">Consuming a Weather API</a>
-                  </li>
-                  <li>Week 06:</li>
+               <ul id="learning-activities">
+                  <!-- Dynamic content will be inserted here by JavaScript -->
                </ul>
             </section>
-            <section class="card">
+            <section class="card info-card">
                <h2>Information</h2>
+               <div class="weather-info">
+                  <h3>Current Weather</h3>
+                  <div class="weather-display">
+                     <img id="weather-icon" src="data:," alt="Weather icon">
+                     <div class="weather-details">
+                        <p>
+                           Temperature: <span id="current-temp"></span>°F
+                        </p>
+                        <p>
+                           Current Conditions: <span id="weather-desc"></span>
+                        </p>
+                        <p class="feels-like">
+                           Feels like: <span id="feels-like-temp"></span>°F
+                        </p>
+                     </div>
+                  </div>
+               </div>
                <div class="visit-counter">
-                  <p>Page Visits: <span id="visitCount"></span></p>
+                  <p>Visit Counts: <span id="visitCount"></span></p>
                </div>
             </section>
          </div>
@@ -103,5 +97,7 @@
       <script src="scripts/hamburgerMenu.js"></script>
       <script src="scripts/darkMode.js"></script>
       <script src="scripts/visitCounter.js"></script>
+      <script src="scripts/weather.js"></script>
+      <script src="scripts/links.js"></script>
    </body>
 </html>

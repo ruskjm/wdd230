@@ -1,0 +1,101 @@
+{
+  "weeks": [
+      {
+          "week": "Week 1",
+          "links": [
+              {
+                  "url": "week01/holygrail.html",
+                  "title": "Layout"
+              },
+              {
+                  "url": "week01/media-query.html",
+                  "title": "Media Query"
+              },
+              {
+                  "url": "https://codepen.io/Jason-R-the-selector/pen/yLWoJmb",
+                  "title": "JS Pen"
+              }
+          ]
+      },
+      {
+          "week": "Week 2",
+          "links": [
+              {
+                  "url": "week02/design.html",
+                  "title": "Web Design Principles"
+              },
+              {
+                  "url": "https://codepen.io/Jason-R-the-selector/pen/rNgppXG",
+                  "title": "Responsive \"Hamburger\" Menu"
+              },
+              {
+                  "url": "week02/bom.html",
+                  "title": "DOM Manipulation"
+              }
+          ]
+      },
+      {
+          "week": "Week 3",
+          "links": [
+              {
+                  "url": "week03/images/landscape.webp",
+                  "title": "WebP"
+              },
+              {
+                  "url": "week03/lazyload.html",
+                  "title": "Lazy Loading"
+              },
+              {
+                  "url": "week03/responsive-images.html",
+                  "title": "Responsive Images"
+              },
+              {
+                  "url": "week03/bom.html",
+                  "title": "localStorage"
+              }
+          ]
+      },
+      {
+          "week": "Week 4",
+          "links": [
+              {
+                  "url": "https://codepen.io/Jason-R-the-selector/pen/OJYeWaV",
+                  "title": "CSS Pseudo-Classes"
+              },
+              {
+                  "url": "week04/images/css-combinators.jpg",
+                  "title": "CSS Combinators"
+              },
+              {
+                  "url": "week04/tablebuild.html",
+                  "title": "HTML Tables for Data Presentation"
+              },
+              {
+                  "url": "week04/index.html",
+                  "title": "HTML Forms"
+              }
+          ]
+      },
+      {
+          "week": "Week 5",
+          "links": [
+              {
+                  "url": "https://codepen.io/Jason-R-the-selector/pen/QWXLWJb",
+                  "title": "CSS Pseudo-elements"
+              },
+              {
+                  "url": "week05/new-ward-members.json",
+                  "title": "JSON"
+              },
+              {
+                  "url": "week05/prophets.html",
+                  "title": "The Fetch API"
+              },
+              {
+                  "url": "week05/weather.html",
+                  "title": "Consuming a Weather API"
+              }
+          ]
+      }
+  ]
+}

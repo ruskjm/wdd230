@@ -222,20 +222,48 @@ picture img {
   color: white;
 }
 
-/* Visit counter styles */
+/* Weather/Visit counter styles */
+.info-card {
+  padding: 20px;
+}
+
+.info-card h2 {
+  margin-bottom: 15px;
+}
+
+.weather-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.weather-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.weather-display img {
+  width: 50px;
+  height: 50px;
+}
+
+.weather-display p {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.feels-like {
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
 .visit-counter {
-  text-align: center;
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 20px;
+  font-size: 1.4rem;
 }
 
 .visit-counter p {
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.visit-counter span {
-  color: blue;
+  margin: 0;
 }
 
 /* Map container styles */

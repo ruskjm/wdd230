@@ -141,6 +141,43 @@
     font-size: 1.8rem;
   }
 
+  /* Weather/Vist count styles for larger screens */
+  .info-card {
+    padding: 30px;
+  }
+
+  .info-card h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .weather-info h3 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+
+  .weather-display {
+    gap: 15px;
+  }
+
+  .weather-display img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .weather-display p {
+    font-size: 2rem;
+  }
+
+  .feels-like {
+    font-size: 1em;
+  }
+
+  .visit-counter {
+    margin-top: 30px;
+    font-size: 1.8rem;
+  }
+
   /* Footer styles for larger screens */
   footer {
     font-size: 2rem;
