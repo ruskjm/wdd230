@@ -377,6 +377,7 @@ footer {
   text-align: center;
   margin-bottom: 20px;
   color: var(--primary-color);
+  font-size: 3em;
 }
 
 .image-gallery figure {
@@ -556,50 +557,239 @@ footer {
   margin-top: 5px;
 }
 
-/* Existing Thank You Page Styles */
-.thank-you-message {
-  max-width: 800px;
-  width: 90%;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: var(--light-bg-color);
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Directory Page Styles */
+.directory-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-.thank-you-message h2 {
-  color: var(--primary-color);
-  font-size: 2em;
-  margin-bottom: 1rem;
+.directory-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.thank-you-message p {
-  margin-bottom: 1rem;
-  line-height: 1.6;
-  color: var(--body-text-color);
+.directory-header h2 {
+  color: var(--primary-color);
+  font-size: 3em;
+  margin: 0;
 }
 
-.thank-you-message .button {
-  display: inline-block;
+.view-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.view-toggle button {
   background-color: var(--secondary-color);
   color: var(--white-color);
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
   border-radius: 4px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-top: 1rem;
-  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.thank-you-message .button:hover {
+.view-toggle button.active {
   background-color: var(--primary-color);
-  transform: scale(1.05);
 }
 
-main:has(.thank-you-message) {
+#directory-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid View Styles */
+#directory-container.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.business-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--light-bg-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.business-card-image {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(50vh - 200px);
+  background-color: #f8f8f8;
+}
+
+.business-card-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.business-card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 8px;
+}
+
+.business-card-content .label::after {
+  content: " ";
+  white-space: pre;
+}
+
+.business-name {
+  font-size: 1.4em;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 5px;
+}
+
+.business-year,
+.business-address,
+.business-phone,
+.business-membership {
+  font-size: 0.9em;
+  color: #333;
+  display: flex;
+  align-items: baseline;
+}
+
+.label {
+  font-weight: bold;
+  min-width: 70px;
+  color: var(--secondary-color);
+}
+
+.business-description {
+  font-size: 0.95em;
+  color: black;
+  line-height: 1.4;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+/* List View Styles */
+#directory-container.list {
+  display: flex;
+  flex-direction: column;
+}
+
+#directory-container.list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#directory-container.list th,
+#directory-container.list td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--light-bg-color);
+}
+
+#directory-container.list thead {
+  background-color: #d3d1c7;
+  color: var(--primary-color);
+}
+
+#directory-container.list tbody tr:nth-child(odd) {
+  background-color: var(--white-color);
+}
+
+#directory-container.list tbody tr:nth-child(even) {
+  background-color: var(--light-bg-color);
+}
+
+/* Common Styles */
+.business-website {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1.05em;
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.business-website:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* Styles for list on smaller screens */
+@media screen and (max-width: 500px) {
+  .directory-header h2 {
+    font-size: 2.5em;
+  }
+
+  #directory-container.grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  #directory-container.list table,
+  #directory-container.list thead,
+  #directory-container.list tbody,
+  #directory-container.list th,
+  #directory-container.list td,
+  #directory-container.list tr {
+    display: block;
+  }
+
+  #directory-container.list thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  #directory-container.list tr {
+    margin-bottom: 15px;
+    border: 1px solid var(--light-bg-color);
+  }
+
+  #directory-container.list td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  #directory-container.list td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  .view-toggle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .view-toggle button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }

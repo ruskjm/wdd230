@@ -1,0 +1,148 @@
+{
+    "businesses": [
+        {
+            "name": "Banker Chiropractic",
+            "address": "4815 Laguna Park Dr, Ste A, Elk Grove, CA 95758",
+            "phone": "(916) 683-7000",
+            "website": "http://www.bankerchiropractic.com/",
+            "image": "banker-chiropractic.webp",
+            "membershipLevel": "Silver",
+            "yearEstablished": 1995,
+            "description": "Family chiropractic care offering treatments for back pain, neck pain, headaches, and other musculoskeletal issues.",
+            "category": "Healthcare",
+            "hoursOfOperation": "Mon: 9:00 AM - 3:00 PM, Wed: 9:00 AM - 12:00 PM, 3:00 PM - 5:30 PM, Thu: 9:00 AM - 3:00 PM, Fri: 9:00 AM - 12:00 PM"
+        },
+        {
+            "name": "Cosumnes Community Services District",
+            "address": "8820 Elk Grove Blvd, Elk Grove, CA 95624",
+            "phone": "(916) 405-7150",
+            "website": "https://www.cosumnescsd.gov/",
+            "image": "cosumnes-csd.webp",
+            "membershipLevel": "Non-Profit",
+            "yearEstablished": 1985,
+            "description": "Provides parks and recreation services, fire protection, and emergency medical services to the Elk Grove community.",
+            "category": "Government Services",
+            "hoursOfOperation": "Mon-Fri: 8:00 AM - 5:00 PM"
+        },
+        {
+            "name": "Elk Grove Dental Group",
+            "address": "9727 Elk Grove Florin Rd #250, Elk Grove, CA 95624",
+            "phone": "(916) 683-1102",
+            "website": "https://www.elkgrovedental.com",
+            "image": "elk-grove-dental.webp",
+            "membershipLevel": "Gold",
+            "yearEstablished": 1985,
+            "description": "Comprehensive dental care for the whole family in a comfortable, state-of-the-art facility.",
+            "category": "Healthcare",
+            "hoursOfOperation": "Mon-Fri: 8:00 AM - 5:00 PM, Sat: 9:00 AM - 2:00 PM"
+        },
+        {
+            "name": "Elk Grove Food Bank Services",
+            "address": "9820 Dino Dr Suite 140, Elk Grove, CA 95624",
+            "phone": "(916) 685-8453",
+            "website": "https://www.elkgrovefoodbank.org",
+            "image": "elk-grove-food-bank.webp",
+            "membershipLevel": "Non-Profit",
+            "yearEstablished": 1974,
+            "description": "Non-profit organization providing food assistance to families in need in the Elk Grove area.",
+            "category": "Non-Profit",
+            "hoursOfOperation": "Mon-Fri: 10:00 AM - 3:00 PM"
+        },
+        {
+            "name": "Elk Grove Optometry",
+            "address": "9304 Elk Grove Blvd #130, Elk Grove, CA 95624",
+            "phone": "(916) 686-5050",
+            "website": "https://www.elkgroveoptometry.com",
+            "image": "elk-grove-optometry.webp",
+            "membershipLevel": "Bronze",
+            "yearEstablished": 1995,
+            "description": "Comprehensive eye care services including exams, glasses, and contact lenses.",
+            "category": "Healthcare",
+            "hoursOfOperation": "Mon-Fri: 9:00 AM - 6:00 PM, Sat: 9:00 AM - 2:00 PM"
+        },
+        {
+            "name": "Elk Grove Toyota",
+            "address": "9640 W Stockton Blvd, Elk Grove, CA 95757",
+            "phone": "(916) 405-8000",
+            "website": "https://www.elkgrovetoyota.com",
+            "image": "elk-grove-toyota.webp",
+            "membershipLevel": "Gold",
+            "yearEstablished": 2003,
+            "description": "New and used Toyota dealership offering sales, service, and parts.",
+            "category": "Automotive",
+            "hoursOfOperation": "Mon-Sat: 9:00 AM - 9:00 PM, Sun: 10:00 AM - 8:00 PM"
+        },
+        {
+            "name": "Elk Grove Unified School District",
+            "address": "9510 Elk Grove-Florin Rd, Elk Grove, CA 95624",
+            "phone": "(916) 686-7711",
+            "website": "https://www.egusd.net",
+            "image": "egusd.webp",
+            "membershipLevel": "Gold",
+            "yearEstablished": 1959,
+            "description": "Public school district serving Elk Grove and surrounding communities.",
+            "category": "Education",
+            "hoursOfOperation": "Mon-Fri: 8:00 AM - 4:30 PM"
+        },
+        {
+            "name": "Five Guys",
+            "address": "7470 Laguna Blvd Ste 100, Elk Grove, CA 95758",
+            "phone": "(916) 684-0101",
+            "website": "https://www.fiveguys.com",
+            "image": "five-guys.webp",
+            "membershipLevel": "Silver",
+            "yearEstablished": 2010,
+            "description": "Fast-casual restaurant chain known for its made-to-order burgers, fresh-cut fries, and customizable toppings.",
+            "category": "Restaurant",
+            "hoursOfOperation": "Mon-Sun: 11:00 AM - 10:00 PM"
+        },
+        {
+            "name": "Leatherby's Family Creamery",
+            "address": "8238 Laguna Blvd, Elk Grove, CA 95758",
+            "phone": "(916) 691-3334",
+            "website": "https://leatherbys.net",
+            "image": "leatherbys-creamery.webp",
+            "membershipLevel": "Silver",
+            "yearEstablished": 1982,
+            "description": "Family-owned ice cream parlor serving homemade ice cream, sundaes, and classic American fare.",
+            "category": "Restaurant",
+            "hoursOfOperation": "Sun-Thu: 11:00 AM - 10:00 PM, Fri-Sat: 11:00 AM - 11:00 PM"
+        },
+        {
+            "name": "Pizza Bell",
+            "address": "9160 E Stockton Blvd Suite 104, Elk Grove, CA 95624",
+            "phone": "(916) 686-8646",
+            "website": "https://www.pizza-bell.com/",
+            "image": "pizza-bell.webp",
+            "membershipLevel": "Silver",
+            "yearEstablished": 2008,
+            "description": "Local pizzeria offering a variety of pizzas, pasta, and other Italian-inspired dishes.",
+            "category": "Restaurant",
+            "hoursOfOperation": "Mon-Sun: 11:00 AM - 10:00 PM"
+        },
+        {
+            "name": "Raising Cane's",
+            "address": "8510 Bond Rd, Elk Grove, CA 95624",
+            "phone": "(916) 896-5500",
+            "website": "https://www.raisingcanes.com",
+            "image": "raising-canes.webp",
+            "membershipLevel": "Silver",
+            "yearEstablished": 2021,
+            "description": "Fast-food restaurant specializing in chicken fingers, crinkle-cut fries, and signature Cane's sauce.",
+            "category": "Restaurant",
+            "hoursOfOperation": "Sun-Thu: 10:00 AM - 11:00 PM, Fri-Sat: 10:00 AM - 12:00 AM"
+        },
+        {
+            "name": "Stonebridge Properties",
+            "address": "9250 Laguna Springs Dr #105, Elk Grove, CA 95758",
+            "phone": "(916) 685-4444",
+            "website": "https://www.stonebridgeproperties.com",
+            "image": "stonebridge-properties.webp",
+            "membershipLevel": "Silver",
+            "yearEstablished": 1998,
+            "description": "Full-service real estate agency specializing in residential and commercial properties in Elk Grove.",
+            "category": "Real Estate",
+            "hoursOfOperation": "Mon-Fri: 9:00 AM - 5:00 PM, Sat: 10:00 AM - 3:00 PM"
+        }
+    ]
+}

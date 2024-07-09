@@ -251,4 +251,46 @@
   .thank-you-message h2 {
     font-size: 1.5em;
   }
+
+  /* Directory Page Styles */
+  .directory-main {
+    padding: 40px;
+  }
+
+  .business-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .business-card-content {
+    padding: 20px;
+  }
+
+  .business-year,
+  .business-address,
+  .business-phone,
+  .business-membership {
+    font-size: 1em;
+  }
+
+  .business-description {
+    font-size: 1.1em;
+  }
+
+  .business-website {
+    font-size: 1.1em;
+  }
+
+  #directory-container.list th,
+  #directory-container.list td {
+    padding: 15px;
+  }
+
+  #directory-container.list th {
+    font-size: 1.2em;
+  }
+
+  #directory-container.list td {
+    font-size: 1.1em;
+  }
 }
