@@ -21,6 +21,12 @@
       <link href="https://fonts.googleapis.com/css2?family=Lora:wght@100;400&display=swap" rel="stylesheet">
    </head>
    <body>
+      <div id="meet-greet-banner" class="banner">
+         <div class="banner-content">
+            <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.!</p>
+         </div>
+         <button id="close-banner">X</button>
+      </div>
       <header>
          <div class="header-top">
             <nav>
@@ -57,6 +63,14 @@
          <p>We want to showcase Elk Grove in order to attract more businesses and jobs while enhancing our quality of life. The Chamber, as the voice of our businesses, works diligently to provide outstanding services for all of our members.</p>
       </section>
       <main>
+         <section class="spotlight" id="spotlight1">
+            <h2>Featured Business 1</h2>
+            <!-- Spotlight content will be dynamically added here -->
+         </section>
+         <section class="spotlight" id="spotlight2">
+            <h2>Featured Business 2</h2>
+            <!-- Spotlight content will be dynamically added here -->
+         </section>
          <section class="events">
             <h2>Current Events</h2>
             <ul>
@@ -68,23 +82,35 @@
          </section>
          <section class="weather">
             <h2>Weather</h2>
-            <p>Current weather information</p>
-         </section>
-         <section class="spotlight">
-            <h3>Company Spotlight 1</h3>
-            <p>Advertisement content</p>
-         </section>
-         <section class="spotlight">
-            <h3>Company Spotlight 2</h3>
-            <p>Advertisement content</p>
-         </section>
-         <section class="spotlight">
-            <h3>Company Spotlight 3</h3>
-            <p>Advertisement content</p>
-         </section>
-         <section class="spotlight">
-            <h3>Company Spotlight 4</h3>
-            <p>Advertisement content</p>
+            <div class="weather-info">
+               <img id="weather-icon" src="data:," alt="" class="weather-icon">
+               <div class="weather-details">
+                  <div class="location">
+                     <span id="weather-location"></span>
+                  </div>
+                  <div class="sunrise-sunset">
+                     <div>Sunrise: <span id="sunrise-time"></span></div>
+                     <div>Sunset: <span id="sunset-time"></span></div>
+                  </div>
+                  <div class="temperature-location">
+                     <div class="temperature">
+                        <span id="current-temp"></span><span class="degree"></span>°F
+                     </div>
+                  </div>
+                  <div class="feels-like">
+                     Feels like: <span id="feels-like-temp"></span>°F
+                  </div>
+                  <div class="description">
+                     Current Conditions: <span id="weather-desc"></span>
+                  </div>
+                  <div id="forecast-container">
+                     <h3>5-Day Forecast</h3>
+                     <div class="forecast-list">
+                        <!-- Forecast items will be dynamically added here -->
+                     </div>
+                  </div>
+               </div>
+            </div>
          </section>
       </main>
       <section class="map-section">
@@ -119,5 +145,8 @@
       </footer>
       <script src="scripts/getDates.js"></script>
       <script src="scripts/hamburgerMenu.js"></script>
+      <script src="scripts/weather.js"></script>
+      <script src="scripts/spotlight.js"></script>
+      <script src="scripts/banner.js"></script>
    </body>
 </html>

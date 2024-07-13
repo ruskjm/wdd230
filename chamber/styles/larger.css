@@ -103,18 +103,82 @@
     font-size: 18px;
   }
 
-  /* Position and style weather section */
+  /* Weather styles for larger screens */
   .weather {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    padding: 30px;
   }
 
   .weather h2 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
-  .weather p {
+  .weather-info {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .weather-icon {
+    width: 120px;
+    height: 120px;
+    margin-right: 30px;
+    margin-top: 80px;
+  }
+
+  .temperature-location {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .temperature {
+    font-size: 48px;
+    margin-right: 20px;
+  }
+
+  .degree {
+    font-size: 24px;
+    top: 5px;
+    right: -20px;
+  }
+
+  .location {
+    font-size: 45px;
+    text-align: left;
+  }
+
+  .sunrise-sunset,
+  .feels-like,
+  .description {
+    text-align: left;
     font-size: 18px;
+  }
+
+  #forecast-container {
+    margin-top: 30px;
+  }
+
+  #forecast-container h3 {
+    font-size: 22px;
+  }
+
+  .forecast-list {
+    flex-wrap: nowrap;
+  }
+
+  .forecast-item {
+    flex-basis: 20%;
+  }
+
+  .forecast-day {
+    font-size: 18px;
+  }
+
+  .forecast-temp {
+    font-size: 16px;
+  }
+
+  .forecast-icon {
+    width: 60px;
+    height: 60px;
   }
 
   /* Position spotlight sections in grid */
@@ -281,6 +345,7 @@
     font-size: 1.1em;
   }
 
+  /* Directory Styles */
   #directory-container.list th,
   #directory-container.list td {
     padding: 15px;
@@ -292,5 +357,15 @@
 
   #directory-container.list td {
     font-size: 1.1em;
+  }
+
+  /* Banner Styles */
+  .banner {
+    font-size: 1.2em;
+  }
+
+  #close-banner {
+    font-size: 1.3em;
+    padding: 8px 13px;
   }
 }
