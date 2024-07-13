@@ -411,6 +411,24 @@ main {
   padding-bottom: 10px;
 }
 
+.spotlight-section {
+  margin-top: 20px;
+}
+
+.spotlight-section h2 {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.spotlight-heading {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .spotlight img {
   max-width: 100%;
   height: auto;
