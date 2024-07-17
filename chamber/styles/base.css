@@ -688,6 +688,7 @@ footer {
 .image-gallery figcaption {
   margin-top: 5px;
   font-style: italic;
+  font-weight: bold;
 }
 
 /* Visit message styles */
